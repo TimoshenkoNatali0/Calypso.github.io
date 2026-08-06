@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calypso - Прокат сценических костюмов из кожи</title>
+  <!-- Шрифт для "эпичности" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="top">
+<div class="nav-overlay" id="navOverlay"></div>
+
+<header class="header">
+  <div class="container header-wrap">
+      <a href="#top">
+          <img src="img/logo_calypso.png" width="100px">
+      </a>
+      <!-- Кнопка бургера (показывается только на мобильных) -->
+      <button class="burger-toggle" id="burgerToggle" aria-label="Открыть меню">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+      </button>
+    <nav class="nav" id="mainNav">
+      <a href="#portfolio">Работы</a>
+      <a href="#expert">О нас</a>
+      <a href="#footer">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+    <!-- 1 ГЕРОЙ (Fullscreen + Параллакс) -->
+    <section class="hero hero-fullscreen" id="hero">
+        <div class="hero-parallax" id="heroParallax">
+            <div class="hero-bg-image">
+
+                <!-- РАСКОММЕНТИРУЙТЕ ДЛЯ РЕАЛЬНОГО ФОТО -->
+                 <img src="img/main3.jpg" alt="Фоновое изображение">
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-text-block">
+                <h1>Прокат <i>сценических костюмов </i><span class="gold-text">из кожи</span></h1>
+                <p>Создаем образ, который запомнят даже без фотошопа.</p>
+                <a href="#portfolio" class="btn-primary">Смотреть портфолио</a>
+                <div class="hero-stats">
+                    <div><span>6+</span><small>лет опыта</small></div>
+                    <div><span>> 50</span><small>созданных образов</small></div>
+                    <div><span>100%</span><small>ручная работа</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- 2 КЛАССИФИКАЦИЯ (заглушка) -->
+  <section class="categories">
+    <div class="container">
+      <h2>Направления</h2>
+      <div class="section-subtitle">— классификация костюмов —</div>
+      <div class="categories-grid">
+        <div class="category-item">
+          <div class="cat-icon">🏛️</div>
+          <h4>Шоу</h4>
+          <p>Шоу, Концерты, Фотосессии</p>
+        </div>
+        <div class="category-item">
+          <div class="cat-icon">🧝</div>
+          <h4>Фэнтези & Эльфы</h4>
+          <p>Тёмные эльфы, варвары</p>
+        </div>
+        <div class="category-item">
+          <div class="cat-icon">⚔️</div>
+          <h4>Кожаные доспехи</h4>
+          <p>Бригантины, кирасы, наручи</p>
+        </div>
+        <div class="category-item">
+          <div class="cat-icon">🎭</div>
+          <h4>Сценические</h4>
+          <p>Театр, кино, косплей</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 3 СЕКЦИЯ: ПРЕИМУЩЕСТВА -->
+  <section class="advantages">
+  <div class="container">
+    <h2>Почему выбирают нас</h2>
+    <div class="section-subtitle">— 6 причин доверить свой образ —</div>
+
+    <div class="advantages-grid">
+      <!-- 1 -->
+      <div class="advantage-item">
+        <span class="adv-icon">🧵</span>
+        <h4>Ручная работа</h4>
+        <p>Каждый шов и каждая пряжка выполнены <span class="highlight">вручную</span>.</p>
+      </div>
+      <!-- 2 -->
+      <div class="advantage-item">
+        <span class="adv-icon">🐂</span>
+        <h4>Только натуральная кожа</h4>
+        <p>Кожа <span class="highlight">дышит, стареет</span> красиво и <span class="highlight">служит</span> десятилетиями.</p>
+      </div>
+      <!-- 3 -->
+      <div class="advantage-item">
+        <span class="adv-icon">✏️</span>
+        <h4>Индивидуальные лекала</h4>
+        <p>Снимаем более <span class="highlight">20 мерок</span> и создаем выкройку строго под вашу фигуру. Костюм сидит как влитой.</p>
+      </div>
+      <!-- 4 -->
+      <div class="advantage-item">
+        <span class="adv-icon">🎨</span>
+        <h4>Любая сложность</h4>
+        <p>От простого исторического жилета до <span class="highlight">многослойного доспеха</span> с чешуйчатым набором и тиснением.</p>
+      </div>
+      <!-- 5 -->
+      <div class="advantage-item">
+        <span class="adv-icon">🕯️</span>
+        <h4>Состаривание & патина</h4>
+        <p>Придаём коже эффект <span class="highlight">«носибельной»</span> — винтажную патину, потёртости и благородный блеск.</p>
+      </div>
+      <!-- 6 -->
+      <div class="advantage-item">
+        <span class="adv-icon">🏆</span>
+        <h4>Опыт для сцены</h4>
+        <p>Наши костюмы выдерживают <span class="highlight">акробатику, бои и многочасовые</span> спектакли без потери вида.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- 4 ПОРТФОЛИО (примеры работ) -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>Последние работы</h2>
+      <div class="section-subtitle">— каждое изделие уникально —</div>
+
+      <div class="portfolio-grid">
+        <!-- КАРТОЧКА 1 -->
+        <div class="portfolio-card">
+          <div class="card-image">
+            <div class="placeholder-icon">🖤</div>
+            <span>Фото костюма</span>
+            <div class="badge">новинка</div>
+          </div>
+          <div class="card-body">
+            <h3>Доспех тёмного эльфа</h3>
+            <div class="meta">Фэнтези / 2026</div>
+            <p>Полный комплект из черной кожи с серебряным тиснением. Состоит из 14 элементов.</p>
+          </div>
+        </div>
+
+        <!-- КАРТОЧКА 2 -->
+        <div class="portfolio-card">
+          <div class="card-image">
+            <div class="placeholder-icon">⚜️</div>
+            <span>Фото костюма</span>
+            <div class="badge">хит</div>
+          </div>
+          <div class="card-body">
+            <h3>Викинг Ярл</h3>
+            <div class="meta">Исторический / 2025</div>
+            <p>Кожаный панцирь с нашивками, перевязь и наручи. Ручное плетение и ковка пряжек.</p>
+          </div>
+        </div>
+
+        <!-- КАРТОЧКА 3 -->
+        <div class="portfolio-card">
+          <div class="card-image">
+            <div class="placeholder-icon">🐉</div>
+            <span>Фото костюма</span>
+            <div class="badge">в работе</div>
+          </div>
+          <div class="card-body">
+            <h3>Кираса Драконьего стража</h3>
+            <div class="meta">Доспехи / 2026</div>
+            <p>Многослойная конструкция с чешуйчатым набором. Вес — 6 кг, полная подвижность.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="#" class="btn-primary">Все работы →</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 5 СЕКЦИЯ: ОБ ЭКСПЕРТЕ -->
+<section class="expert" id="expert">
+  <div class="container">
+    <div class="expert-wrap">
+      
+      <!-- Левая колонка — фото мастера (заглушка) -->
+      <div class="expert-photo">
+        <div class="photo-placeholder">
+
+        </div>
+        <div class="expert-sign">
+          <span class="sign-name">Елена Векличева</span>
+          <span class="sign-title">Основатель &amp; ведущий мастер</span>
+        </div>
+      </div>
+
+      <!-- Правая колонка — текст -->
+      <div class="expert-content">
+        <div class="expert-badge">Кто создаёт ваш образ</div>
+        <h2>Руки, <span class="gold-text">помнящие кожу</span></h2>
+        <div class="expert-divider"></div>
+        
+        <div class="expert-text">
+
+          <p>
+            <strong>Всем привет!</strong><br>
+              Меня зовут Елена, я мастер по изготовлению <span class="gold-text">сценических костюмов и аксессуаров из кожи</span>.<br><br>
+
+              🦎 Мои работы можно увидеть на сценах театров, музыкальных площадках, музее, в клипах и журналах, на фестивалях и подиумах шоу - красоты 💃<br>
+
+              🦎 Индивидуальное изготовление сценических костюмов и аксессуаров для сцены и фотосессий под брэндом Calypso!<br>
+
+              🦎Костюмы в стиле викинги, фантазийные костюмы, платья - портупеи, ремни, портупеи, браслеты, наручи, чокеры, ошейники, наплечники, гартеры и многое другое.<br>
+
+              🦎 Ручная работа, индивидуальный подход к каждому клиенту.
+          </p>
+        </div>
+
+        <div class="expert-stats-mini">
+          <div>
+            <span>6+</span>
+            <small>лет в коже</small>
+          </div>
+          <div>
+            <span>50+</span>
+            <small>созданных образов</small>
+          </div>
+          <div>
+            <span>100%</span>
+            <small>ручная работа</small>
+          </div>
+        </div>
+
+        <a href="#" class="btn-primary">Связаться с мастером</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<!-- 6 СЕКЦИЯ: ОТЗЫВЫ С ФОТО РАБОТ -->
+<section class="reviews">
+  <div class="container">
+    <div class="reviews-header">
+      <h2>Отзывы</h2>
+      <div class="section-subtitle">— о нас говорят —</div>
+    </div>
+
+    <div class="reviews-grid">
+      <!-- ОТЗЫВ 1 -->
+      <div class="review-card">
+        <div class="review-work-photo">
+          <div class="work-placeholder">
+            <span>📸</span>
+            <span>Фото костюма</span>
+            <small>(загрузите фото работы)</small>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <blockquote>
+          «Здесь будет текст отзыва. Расскажите, как мастер помог воплотить образ, 
+          насколько качественно сшит костюм, как он сидит на фигуре и 
+          как реагировали зрители или коллеги по сцене.»
+        </blockquote>
+        <div class="review-author">
+          <div class="author-avatar">
+            <span>А</span>
+          </div>
+          <div class="author-info">
+            <span class="author-name">Александра Р.</span>
+            <span class="author-role">Актриса, косплеер</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ОТЗЫВ 2 -->
+      <div class="review-card">
+        <div class="review-work-photo">
+          <div class="work-placeholder">
+            <span>📸</span>
+            <span>Фото костюма</span>
+            <small>(загрузите фото работы)</small>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <blockquote>
+          «Здесь будет второй отзыв. Например, от организатора исторических фестивалей, 
+          реконструктора или театрального режиссёра. Подчеркните надёжность, 
+          историческую достоверность или удобство в бою.»
+        </blockquote>
+        <div class="review-author">
+          <div class="author-avatar">
+            <span>Д</span>
+          </div>
+          <div class="author-info">
+            <span class="author-name">Дмитрий В.</span>
+            <span class="author-role">Реконструктор, клуб «Северный волк»</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ОТЗЫВ 3 -->
+      <div class="review-card">
+        <div class="review-work-photo">
+          <div class="work-placeholder">
+            <span>📸</span>
+            <span>Фото костюма</span>
+            <small>(загрузите фото работы)</small>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <blockquote>
+          «Третий отзыв может быть от кинопродюсера, театрального художника или 
+          постоянного клиента. Отметьте долговечность костюмов, внимательность 
+          к деталям и скорость выполнения заказа.»
+        </blockquote>
+        <div class="review-author">
+          <div class="author-avatar">
+            <span>М</span>
+          </div>
+          <div class="author-info">
+            <span class="author-name">Марина К.</span>
+            <span class="author-role">Художник по костюмам, театр «Маска»</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка "Все отзывы" -->
+    <div class="reviews-footer">
+      <a href="#" class="btn-primary">Читать все отзывы →</a>
+    </div>
+  </div>
+</section>
+
+  <!-- 7 ПРОЦЕСС -->
+  <section class="process">
+    <div class="container">
+      <h2>Как создаётся магия</h2>
+      <div class="section-subtitle">— от эскиза до финальной примерки —</div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h4>Эскиз & лекала</h4>
+          <p>Разрабатываем выкройку с учётом анатомии и характера персонажа.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h4>Ручной пошив</h4>
+          <p>Только натуральная кожа, вощёные нити и медная фурнитура.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h4>Тиснение & патина</h4>
+          <p>Финальное состаривание, тонировка и нанесение защитного слоя.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 8 СЕКЦИЯ: ПРИЗЫВ К ДЕЙСТВИЮ + ФОРМА -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-wrap">
+      
+      <!-- Левая часть — текст -->
+      <div class="cta-content">
+        <div class="cta-badge">Свяжитесь с нами</div>
+        <h2>Готовы воплотить <span class="gold-text">ваш образ</span> в коже?</h2>
+        <div class="cta-divider"></div>
+        <p class="cta-text">
+          Оставьте заявку, и мы свяжемся с вами в течение <span class="gold-text">24 часов</span>. 
+          Обсудим идею, подберём кожу и сделаем предварительный расчёт.
+        </p>
+        
+        <div class="cta-features">
+          <div class="cta-feature">
+            <span class="feature-icon">✓</span>
+            <span>Бесплатная консультация</span>
+          </div>
+          <div class="cta-feature">
+            <span class="feature-icon">✓</span>
+            <span>Индивидуальный эскиз</span>
+          </div>
+          <div class="cta-feature">
+            <span class="feature-icon">✓</span>
+            <span>Примерка и подгонка</span>
+          </div>
+        </div>
+
+        <div class="cta-contacts">
+          <div>
+            <span class="contact-label">Телефон</span>
+            <a href="tel:+71234567890" class="contact-link">+7 (123) 456-78-90</a>
+          </div>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:info@leather-atelier.ru" class="contact-link">info@leather-atelier.ru</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правая часть — форма -->
+      <div class="cta-form">
+        <form action="#" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="cta-name">Ваше имя</label>
+            <input type="text" id="cta-name" name="name" placeholder="Александра" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="cta-phone">Телефон или Telegram</label>
+            <input type="text" id="cta-phone" name="phone" placeholder="+7 (123) 456-78-90" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="cta-message">Краткое описание идеи</label>
+            <textarea id="cta-message" name="message" rows="3" placeholder="Например: хочу доспех тёмного эльфа с тиснением"></textarea>
+          </div>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="cta-agree" name="agree" required>
+            <label for="cta-agree">
+              Я соглашаюсь на обработку персональных данных
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary btn-form">Отправить заявку →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ФУТЕР С КОНТАКТАМИ -->
+<!-- ======================================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <!-- Колонка 1: Логотип + описание -->
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">Calypso</div>
+        <p class="footer-desc">
+          Сценические костюмы, доспехи и образы из натуральной кожи. 
+          Ручная работа для театра, кино и косплея.
+        </p>
+      </div>
+
+      <!-- Колонка 2: Контакты -->
+      <div class="footer-col footer-contacts">
+        <h4>Контакты</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="fc-icon">📞</span>
+            <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+          </li>
+          <li>
+            <span class="fc-icon">✉️</span>
+            <a href="mailto:info@leather-atelier.ru">info@calypso.ru</a>
+          </li>
+          <li>
+            <span class="fc-icon">📍</span>
+            <span>г. Москва, ул. Кожевенная, д. 12</span>
+          </li>
+          <li>
+            <span class="fc-icon">🕐</span>
+            <span>Ежедневно: 10:00 – 20:00</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Колонка 3: Соцсети + быстрые ссылки -->
+      <div class="footer-col footer-social-col">
+        <h4>Мы в соцсетях</h4>
+        <div class="footer-social-links">
+          <a href="https://vk.ru/kozha.calypso" class="social-link" title="VK">🌐 VK</a>
+        </div>
+        <div class="footer-nav-links">
+          <a href="#portfolio">Портфолио</a>
+          <a href="#expert">О нас</a>
+          <a href="#footer">Контакты</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Нижняя строка -->
+    <div class="footer-bottom">
+      <span>© Calypso - Прокат сценических костюмов из кожи</span>
+      <span>
+        <a href="#" class="footer-policy">Политика конфиденциальности</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
