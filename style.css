@@ -82,7 +82,9 @@
 
    /* ----- ШАПКА ----- */
    header {
-       background-image: url("img/kozha4.webp");
+       background-image: url("img/kozha2.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
      padding: 8px 0;
      border-bottom: 1px solid rgba(217, 168, 126, 0.2);
      position: sticky;
