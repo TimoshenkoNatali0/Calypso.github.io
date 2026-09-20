@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар — Calypso</title>
+  <meta name="description" content="Сценический костюм из кожи на заказ — Calypso.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+  <script src="js/product.js" defer></script>
+</head>
+<body id="top">
+
+<!-- Оверлей для бургера -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ======================================== -->
+<!-- ШАПКА (как на других страницах) -->
+<!-- ======================================== -->
+<header class="header">
+  <div class="container header-wrap">
+    <a href="#top">
+      <img src="img/logo_calypso.png" width="100px">
+    </a>
+    <!-- Кнопка бургера (показывается только на мобильных) -->
+    <button class="burger-toggle" id="burgerToggle" aria-label="Открыть меню">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="index.html#portfolio">Работы</a>
+      <a href="index.html#expert">О нас</a>
+      <a href="index.html#footer">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ======================================== -->
+  <!-- ХЛЕБНЫЕ КРОШКИ (динамические) -->
+  <!-- ======================================== -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Главная</a>
+      <span class="separator">/</span>
+      <a href="catalog.html">Каталог</a>
+      <span class="separator">/</span>
+      <a href="#" id="breadcrumbCategory">Категория</a>
+      <span class="separator">/</span>
+      <span class="current" id="breadcrumbProduct">Товар</span>
+    </div>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- КОНТЕНТ ТОВАРА (заполняется через JS) -->
+  <!-- ======================================== -->
+  <section class="product-page">
+    <div class="container">
+      <div class="product-page-grid" id="productPage">
+        <!-- JS вставит сюда содержимое -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================== -->
+  <!-- ПОХОЖИЕ ТОВАРЫ -->
+  <!-- ======================================== -->
+  <section class="related-products">
+    <div class="container">
+      <h2>Похожие работы</h2>
+      <div class="section-subtitle">— из этой же категории —</div>
+      <div class="category-group-grid" id="relatedGrid">
+        <!-- JS вставит сюда карточки -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================================== -->
+<!-- ФУТЕР -->
+<!-- ======================================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">Calypso</div>
+        <p class="footer-desc">
+          Сценические костюмы, доспехи и образы из натуральной кожи.
+          Ручная работа для театра, кино и косплея.
+        </p>
+      </div>
+      <div class="footer-col footer-contacts">
+        <h4>Контакты</h4>
+        <ul class="footer-contact-list">
+          <li><span class="fc-icon">📞</span><a href="tel:+71234567890">+7 (123) 456-78-90</a></li>
+          <li><span class="fc-icon">✉️</span><a href="mailto:info@calypso.ru">info@calypso.ru</a></li>
+          <li><span class="fc-icon">📍</span><span>г. Москва, ул. Кожевенная, д. 12</span></li>
+          <li><span class="fc-icon">🕐</span><span>Ежедневно: 10:00 – 20:00</span></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-social-col">
+        <h4>Мы в соцсетях</h4>
+        <div class="footer-social-links">
+          <a href="https://vk.ru/kozha.calypso" class="social-link">🌐 VK</a>
+        </div>
+        <div class="footer-nav-links">
+          <a href="catalog.html">Каталог</a>
+          <a href="index.html#portfolio">Портфолио</a>
+          <a href="index.html#expert">О нас</a>
+          <a href="index.html#footer">Контакты</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Calypso - Прокат сценических костюмов из кожи</span>
+      <span><a href="#" class="footer-policy">Политика конфиденциальности</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
