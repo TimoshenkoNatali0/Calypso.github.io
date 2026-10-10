@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calypso - Прокат сценических костюмов из кожи</title>
+    <!-- Шрифт для "эпичности" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/catalog.js" defer></script>
+</head>
+<body id="top">
+<div class="nav-overlay" id="navOverlay"></div>
+
+<header class="header">
+    <div class="container header-wrap">
+        <a href="#top">
+            <img src="img/logo_calypso.png" width="100px">
+        </a>
+        <!-- Кнопка бургера (показывается только на мобильных) -->
+        <button class="burger-toggle" id="burgerToggle" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        <nav class="nav" id="mainNav">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#portfolio">Работы</a>
+            <a href="index.html#expert">О нас</a>
+            <a href="index.html#footer">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 1 ГЕРОЙ (Fullscreen + Параллакс) -->
+    <section class="hero hero-split">
+        <!-- Контейнер с отступами, как у всего сайта -->
+        <div class="container hero-container">
+            <div class="hero-row">
+
+                <!-- Левая колонка (текст) — внутри контейнера -->
+                <div class="hero-col-text">
+                    <div class="hero-text-inner">
+                        <h1>Сценические костюмы из кожи<br><span class="gold-text">От рыцаря до рок-звезды</span></h1>
+                        <p>Индивидуальный пошив костюмов из натуральной кожи.</p>
+                        <a href="#categories" class="btn-primary">Выбрать направление</a>
+                        <div class="hero-stats">
+                            <div><span>6+</span><small>лет опыта</small></div>
+                            <div><span>> 50</span><small>созданных образов</small></div>
+                            <div><span>100%</span><small>ручная работа</small></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Правая колонка (фото) — вне контейнера, прижата к правому краю -->
+        <div class="hero-col-image">
+            <div class="hero-image-placeholder">
+                <img src="img/main3.jpg" width="100px">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2 КЛАССИФИКАЦИЯ -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Направления</h2>
+            <div class="section-subtitle">—&nbsp;изготовление на заказ&nbsp;—</div>
+
+            <div class="categories-grid">
+
+                <!-- 1. Женские сценические костюмы -->
+                <a href="catalog.html?category=women" class="category-link">
+                    <div class="category-item category-item-women">
+                        <h4>Женские сценические</h4>
+                        <p>Платья, корсеты, юбки из кожи для театра, шоу и фотосессий</p>
+                    </div>
+                </a>
+
+                <!-- 2. Мужские сценические костюмы -->
+                <a href="catalog.html?category=men" class="category-link">
+                    <div class="category-item category-item-men">
+                        <h4>Мужские сценические</h4>
+                        <p>Кожаные пиджаки, брюки, жилеты и цельные образы для выступлений</p>
+                    </div>
+                </a>
+
+                <!-- 3. Рыцари, викинги, доспехи -->
+                <a href="catalog.html?category=armor" class="category-link">
+                    <div class="category-item category-item-dospeh">
+                        <h4>Рыцари, викинги, доспехи</h4>
+                        <p>Исторические и фэнтези-доспехи, кольчуги, наручи, кирасы</p>
+                    </div>
+                </a>
+
+                <!-- 4. Рок, глэм-рок -->
+                <a href="catalog.html?category=rock" class="category-link">
+                    <div class="category-item category-item-rock">
+                        <h4>Рок, глэм-рок</h4>
+                        <p>Кожаные куртки, штаны, аксессуары с шипами и стразами для сцены</p>
+                    </div>
+                </a>
+
+                <!-- 5. Шляпы, маски, кокошники -->
+                <a href="catalog.html?category=headwear" class="category-link">
+                    <div class="category-item category-item-hat">
+                        <h4>Шляпы, маски, кокошники</h4>
+                        <p>Головные уборы из кожи, тиснённые маски и театральные кокошники</p>
+                    </div>
+                </a>
+
+                <!-- 6. Аксессуары -->
+                <a href="catalog.html?category=accessories" class="category-link">
+                    <div class="category-item category-item-accessories">
+                        <h4>Аксессуары</h4>
+                        <p>Ремни, браслеты, портупеи, сумки и другие детали для завершения образа</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 СЕКЦИЯ: ПРЕИМУЩЕСТВА -->
+    <section class="advantages">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <div class="section-subtitle">—&nbsp;6 причин работать с нами&nbsp&nbsp;—</div>
+
+            <div class="advantages-grid">
+                <!-- 1 -->
+                <div class="advantage-item">
+                    <img src="img/kozha2.webp" width="100px">
+                    <h4>Эксклюзив</h4>
+                    <p>Каждое изделие создаётся индивидуально по вашим меркам и вашим предпочтениям по коже и фурнитуре. <span class="highlight">Такой вещи не будет ни у кого</span> — потому что второй такой просто не существует.
+                       </p>
+                </div>
+
+                <!-- 2 -->
+                <div class="advantage-item">
+                    <img src="img/kozha2.webp" width="100px">
+                    <h4>Натуральная кожа</h4>
+                    <p>Мы используем только качественную <span class="highlight">натуральную кожу</span>, которая со временем красиво стареет.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="advantage-item">
+                    <img src="img/kozha2.webp" width="100px">
+                    <h4>Ручная работа</h4>
+                    <p>Каждый шов и декоративный элемент выполнены <span class="highlight">вручную мастерами</span> с опытом более 6 лет.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="advantage-item">
+                    <img src="img/kozha2.webp" width="100px">
+                    <h4>Выбор стиля</h4>
+                    <p>Реализуем <span class="highlight">ваши фантазии</span>: от исторических доспехов и рок-образов до фэнтезийных персонажей и необычных сценических решений.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="advantage-item">
+                    <img src="img/kozha2.webp" width="100px">
+                    <h4>Честная цена
+                    </h4>
+                    <p>Вы платите за <span class="highlight">материал и работу мастера</span>, получая высокое качество изделия.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="advantage-item">
+                    <img src="img/kozha2.webp" width="100px">
+                    <h4>Гарантия и ремонт</h4>
+                    <p><span class="highlight">Мы не бросаем клиентов после покупки.</span> Починим свои изделия. Дошьем, заменим, исправим - обращайтесь!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 ПОРТФОЛИО (примеры работ) -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Последние работы</h2>
+            <div class="section-subtitle">— каждое изделие уникально —</div>
+
+            <div class="portfolio-grid">
+
+                <!-- КАРТОЧКА 1: Доспех тёмного эльфа -->
+                <a href="product.html?id=3" class="portfolio-card-link">
+                    <div class="portfolio-card">
+                        <div class="card-image">
+                            <div class="placeholder-icon">🖤</div>
+                            <span>Фото костюма</span>
+                            <div class="badge">новинка</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Доспех тёмного эльфа</h3>
+                            <div class="meta">Фэнтези / 2026</div>
+                            <p>Полный комплект из черной кожи с серебряным тиснением. Состоит из 14 элементов.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- КАРТОЧКА 2: Викинг Ярл -->
+                <a href="product.html?id=3" class="portfolio-card-link">
+                    <div class="portfolio-card">
+                        <div class="card-image">
+                            <div class="placeholder-icon">⚜️</div>
+                            <span>Фото костюма</span>
+                            <div class="badge">хит</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Викинг Ярл</h3>
+                            <div class="meta">Исторический / 2025</div>
+                            <p>Кожаный панцирь с нашивками, перевязь и наручи. Ручное плетение и ковка пряжек.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- КАРТОЧКА 3: Кираса Драконьего стража -->
+                <a href="product.html?id=1" class="portfolio-card-link">
+                    <div class="portfolio-card">
+                        <div class="card-image">
+                            <div class="placeholder-icon">🐉</div>
+                            <span>Фото костюма</span>
+                            <div class="badge">в работе</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Кираса Драконьего стража</h3>
+                            <div class="meta">Доспехи / 2026</div>
+                            <p>Многослойная конструкция с чешуйчатым набором. Вес — 6 кг, полная подвижность.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="text-align: center;">
+                <a href="catalog.html" class="btn-primary">Все работы →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 СЕКЦИЯ: ОБ ЭКСПЕРТЕ -->
+    <section class="expert" id="expert">
+        <div class="container">
+            <div class="expert-wrap">
+
+                <!-- Левая колонка — фото мастера (заглушка) -->
+                <div class="expert-photo">
+                    <div class="photo-placeholder">
+
+                    </div>
+                    <div class="expert-sign">
+                        <span class="sign-name">Елена Векличева</span>
+                        <span class="sign-title">Основатель &amp; ведущий мастер</span>
+                    </div>
+                </div>
+
+                <!-- Правая колонка — текст -->
+                <div class="expert-content">
+                    <div class="expert-badge">Кто создаёт ваш образ</div>
+                    <h2>Кожанных дел мастер <span class="gold-text"></span></h2>
+                    <div class="expert-divider"></div>
+
+                    <div class="expert-text">
+
+                        <p>
+                            <strong>Всем привет!</strong><br>
+                            Меня зовут Елена, я мастер по изготовлению <span class="gold-text">сценических костюмов и аксессуаров из кожи</span>.<br><br>
+
+                            🦎 Мои работы можно увидеть на сценах театров, музыкальных площадках, музее, в клипах и журналах, на фестивалях и подиумах шоу - красоты 💃<br>
+
+                            🦎 Индивидуальное изготовление сценических костюмов и аксессуаров для сцены и фотосессий под брэндом Calypso!<br>
+
+                            🦎Костюмы в стиле викинги, фантазийные костюмы, платья - портупеи, ремни, портупеи, браслеты, наручи, чокеры, ошейники, наплечники, гартеры и многое другое.<br>
+
+                            🦎 Ручная работа, индивидуальный подход к каждому клиенту.
+                        </p>
+                    </div>
+
+                    <div class="expert-stats-mini">
+                        <div>
+                            <span>6+</span>
+                            <small>лет в коже</small>
+                        </div>
+                        <div>
+                            <span>50+</span>
+                            <small>созданных образов</small>
+                        </div>
+                        <div>
+                            <span>100%</span>
+                            <small>ручная работа</small>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-primary">Связаться с мастером</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 СЕКЦИЯ: ОТЗЫВЫ С ФОТО РАБОТ -->
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews-header">
+                <h2>Отзывы</h2>
+                <div class="section-subtitle">— о нас говорят —</div>
+            </div>
+
+            <div class="reviews-grid">
+
+                <!-- ОТЗЫВ 1 -->
+                <a href="https://vk.ru/wall95387748_7022"
+                   class="review-card-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="review-card">
+                        <div class="review-work-photo">
+                            <div class="work-placeholder">
+                                <img src="img/reviews/r1.jpg" style="object-fit: cover;width: 400px">
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <blockquote>Невероятные эмоции испытываю каждый раз при просмотре этого видео❤️‍🔥 Невероятный костюм рыцаря, девушки-воина. Лена- ты талантище❤️‍🔥❤️‍🔥❤️‍🔥</blockquote>
+                        <div class="review-author">
+                            <div class="author-avatar">
+                                <span>А</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Yana Sergeevna</span>
+                                <span class="author-role">Модель, косплеер</span>
+                            </div>
+                        </div>
+                        <!-- Намёк, что это ссылка на ВК -->
+                        <div class="review-vk-link">
+                            <span class="vk-icon">🌐</span>
+                            <span>Открыть пост ВКонтакте</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ОТЗЫВ 2 -->
+                <a href="https://vk.ru/wall95387748_2792"
+                   class="review-card-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="review-card">
+                        <div class="review-work-photo">
+                            <div class="work-placeholder">
+                                <img src="img/reviews/r2.jpg" style="object-fit: cover;width: 400px">
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <blockquote>Леночка, ты мастер своего дела. Хочется благодаря костюму полностью перевоплотиться в кого-то другого? Это точно к тебе.
+                            Этот образ воительницы произвел настоящий фурор и покорил множество сердец, что не удивительно!
+                            В моем сердце он тоже навсегда.)<br>
+
+                            Очень желаю тебе еще больше идей и воплощений!</blockquote>
+                        <div class="review-author">
+                            <div class="author-avatar">
+                                <span>Д</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Раиса Осипян</span>
+                                <span class="author-role">Модель, косплеер</span>
+                            </div>
+                        </div>
+                        <div class="review-vk-link">
+                            <span class="vk-icon">🌐</span>
+                            <span>Открыть пост ВКонтакте</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ОТЗЫВ 3 -->
+                <a href="https://vk.ru/wall95387748_5712"
+                   class="review-card-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <div class="review-card">
+                        <div class="review-work-photo">
+                            <div class="work-placeholder">
+                                <img src="img/reviews/r3.jpg" style="object-fit: cover;width: 400px">
+                            </div>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <blockquote>Моя, наверное, самая любимая совместная работа с Леной ❤️‍🔥 Вся команда сработала идеально, а Лена смогла придумать и воссоздать шикарный наряд Амазонки, в котором комфортно было двигаться на лошади ❤️‍🔥 </blockquote>
+                        <div class="review-author">
+                            <div class="author-avatar">
+                                <span>М</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Yana Sergeevna</span>
+                                <span class="author-role">Модель, косплеер</span>
+                            </div>
+                        </div>
+                        <div class="review-vk-link">
+                            <span class="vk-icon">🌐</span>
+                            <span>Открыть пост ВКонтакте</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Кнопка "Все отзывы" -->
+            <div class="reviews-footer">
+                <a href="https://vk.com/kozha.calypso"
+                   class="btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Все отзывы ВКонтакте →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 ПРОЦЕСС -->
+    <section class="process">
+        <div class="container">
+            <h2>Как создаётся магия</h2>
+            <div class="section-subtitle">— от эскиза до финальной примерки —</div>
+
+            <div class="process-carousel">
+
+                <!-- Стрелка назад -->
+                <button class="carousel-arrow carousel-arrow-prev" id="processPrev" aria-label="Предыдущее видео">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </button>
+
+                <!-- Область с видео -->
+                <div class="carousel-viewport" id="processViewport">
+                    <div class="process-videos" id="processTrack">
+
+                        <!-- ВИДЕО 1 -->
+                        <div class="process-video-card">
+                            <video muted loop playsinline preload="metadata">
+                                <source src="img/video/step-1.mp4" type="video/mp4">
+                            </video>
+                            <!-- Постер + иконка play (единый блок) -->
+                            <div class="video-poster" style="background-image: url('img/video/posters/step-1.jpg');">
+                                <div class="video-play-btn" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="8,5 19,12 8,19"/>
+                                    </svg>
+                                </div>
+                                <div class="video-overlay">
+                                    <h4>Женский корсет-доспехи</h4>
+                                </div>
+                            </div>
+                            <div class="video-overlay">
+                                <h4>Женский корсет-доспехи</h4>
+                            </div>
+                        </div>
+
+                        <!-- ВИДЕО 2 -->
+                        <div class="process-video-card">
+                            <video muted loop playsinline preload="metadata">
+                                <source src="img/video/step-2.mp4" type="video/mp4">
+                            </video>
+                            <!-- Постер + иконка play (единый блок) -->
+                            <div class="video-poster" style="background-image: url('img/video/posters/step-2.jpg');">
+                                <div class="video-play-btn" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="8,5 19,12 8,19"/>
+                                    </svg>
+                                </div>
+                                <div class="video-overlay">
+                                    <h4>Сборка темного эльфа</h4>
+                                </div>
+                            </div>
+                            <div class="video-overlay">
+                                <h4>Сборка темного эльфа</h4>
+                            </div>
+                        </div>
+
+                        <!-- ВИДЕО 3 -->
+                        <div class="process-video-card">
+                            <video muted loop playsinline preload="metadata">
+                                <source src="img/video/step-3.mp4" type="video/mp4">
+                            </video>
+                            <!-- Постер + иконка play (единый блок) -->
+                            <div class="video-poster" style="background-image: url('img/video/posters/step-3.jpg');">
+                                <div class="video-play-btn" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="8,5 19,12 8,19"/>
+                                    </svg>
+                                </div>
+                                <div class="video-overlay">
+                                    <h4>Костюм женский "Зена"</h4>
+                                </div>
+                            </div>
+                            <div class="video-overlay">
+                                <h4>Костюм женский "Зена"</h4>
+                            </div>
+                        </div>
+
+                        <!-- ВИДЕО 4 (добавьте, если есть) -->
+                        <div class="process-video-card">
+                            <video muted loop playsinline preload="metadata">
+                                <source src="img/video/step-4.mp4" type="video/mp4">
+                            </video>
+                            <!-- Постер + иконка play (единый блок) -->
+                            <div class="video-poster" style="background-image: url('img/video/posters/step-4.jpg');">
+                                <div class="video-play-btn" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="8,5 19,12 8,19"/>
+                                    </svg>
+                                </div>
+                                <div class="video-overlay">
+                                    <h4>Костюм из серебряной кожи</h4>
+                                </div>
+                            </div>
+                            <div class="video-overlay">
+                                <h4>Костюм из серебряной кожи</h4>
+                            </div>
+                        </div>
+
+                        <!-- ВИДЕО 5 (добавьте, если есть) -->
+                        <div class="process-video-card">
+                            <video muted loop playsinline preload="metadata">
+                                <source src="img/video/step-5.mp4" type="video/mp4">
+                            </video>
+                            <!-- Постер + иконка play (единый блок) -->
+                            <div class="video-poster" style="background-image: url('img/video/posters/step-5.jpg');">
+                                <div class="video-play-btn" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="8,5 19,12 8,19"/>
+                                    </svg>
+                                </div>
+                                <div class="video-overlay">
+                                    <h4>Наруч</h4>
+                                </div>
+                            </div>
+                            <div class="video-overlay">
+                                <h4>Наруч</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Стрелка вперёд -->
+                <button class="carousel-arrow carousel-arrow-next" id="processNext" aria-label="Следующее видео">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </button>
+
+                <!-- Точки-индикаторы -->
+                <div class="carousel-dots" id="processDots"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 СЕКЦИЯ: ПРИЗЫВ К ДЕЙСТВИЮ + ФОРМА -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-wrap">
+
+                <!-- Левая часть — текст -->
+                <div class="cta-content">
+                    <div class="cta-badge">Свяжитесь с нами</div>
+                    <h2>Остались вопросы? <br><span class="gold-text">Мы позвоним!</span></h2>
+                    <div class="cta-divider"></div>
+                    <p class="cta-text">
+                        Мы свяжемся с вами в течение <span class="gold-text">24 часов</span>.
+                        Обсудим идею, подберём кожу и сделаем предварительный расчёт.
+                    </p>
+
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Бесплатная консультация</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Индивидуальный эскиз</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Примерка и подгонка</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-contacts">
+                        <div>
+                            <span class="contact-label">Телефон</span>
+                            <a href="tel:+71234567890" class="contact-link">+7 (953) 178-88-39</a>
+                        </div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:info@leather-atelier.ru" class="contact-link">elena.isaeva.84@list.ru</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая часть — форма -->
+                <div class="cta-form">
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="cta-name">Ваше имя</label>
+                            <input type="text" id="cta-name" name="name" placeholder="Александра" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cta-phone">Телефон или Telegram</label>
+                            <input type="text" id="cta-phone" name="phone" placeholder="+7 (123) 456-78-90" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cta-message">Краткое описание идеи</label>
+                            <textarea id="cta-message" name="message" rows="3" placeholder="Например: хочу доспех тёмного эльфа с тиснением"></textarea>
+                        </div>
+
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="cta-agree" name="agree" required>
+                            <label for="cta-agree">
+                                Я соглашаюсь на обработку персональных данных
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-form">Позвоните мне →</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ФУТЕР С КОНТАКТАМИ -->
+<!-- ======================================== -->
+<footer id="footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Колонка 1: Логотип + описание -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">Calypso</div>
+                <p class="footer-desc">
+                    Сценические костюмы, доспехи и образы из натуральной кожи.
+                    Ручная работа для театра, кино и косплея.
+                </p>
+            </div>
+
+            <!-- Колонка 2: Контакты -->
+            <div class="footer-col footer-contacts">
+                <h4>Контакты</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <span class="fc-icon">📞</span>
+                        <a href="tel:+71234567890">+7 (953) 178-88-39</a>
+                    </li>
+                    <li>
+                        <span class="fc-icon">✉️</span>
+                        <a href="mailto:info@leather-atelier.ru">elena.isaeva.84@list.ru</a>
+                    </li>
+                    <li>
+                        <span class="fc-icon">📍</span>
+                        <span>г. Санкт-Петербург</span>
+                    </li>
+                    <li>
+                        <span class="fc-icon">🕐</span>
+                        <span>Ежедневно: 10:00 – 20:00</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Колонка 3: Соцсети + быстрые ссылки -->
+            <div class="footer-col footer-social-col">
+                <h4>Мы в соцсетях</h4>
+                <div class="footer-social-links">
+                    <!-- VK -->
+                    <a href="https://vk.ru/kozha.calypso"
+                       class="social-link"
+                       title="ВКонтакте"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974H.732c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.431 2.708z"/>
+                        </svg>
+                        <span>VK мастерская Calypso</span>
+                    </a>
+                    <a href="https://vk.ru/elenaveklicheva"
+                       class="social-link"
+                       title="ВКонтакте"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974H.732c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.431 2.708z"/>
+                        </svg>
+                        <span>VK Личная странца мастера</span>
+                    </a>
+                </div>
+                <div class="footer-social-links">
+                    <!-- Telegram -->
+                    <a href="https://t.me/CalypsoElena"
+                       class="social-link"
+                       title="Telegram"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        <span></span>
+                    </a>
+
+                    <!-- MAX -->
+                    <a href="https://max.ru/79531788839"
+                       class="social-link"
+                       title="MAX"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.96 1.504 5.592 3.852 7.282V22l3.595-1.973c.813.223 1.673.342 2.553.342 5.523 0 10-4.145 10-9.259C22 6.145 17.523 2 12 2zm-1.787 12.146-2.42 2.42-1.415-1.414 2.42-2.42-2.42-2.42 1.415-1.415 2.42 2.42 2.42-2.42 1.414 1.415-2.42 2.42 2.42 2.42-1.414 1.414-2.42-2.42zm5.874 1.006h-2v-6h2c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2zm0-4h-.5v2h.5c.275 0 .5-.225.5-.5v-1c0-.275-.225-.5-.5-.5z"/>
+                        </svg>
+                        <span></span>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/79531788839"
+                       class="social-link"
+                       title="WhatsApp"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="footer-nav-links">
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#expert">О нас</a>
+                    <a href="#footer">Контакты</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Нижняя строка -->
+        <div class="footer-bottom">
+            <span>© Calypso - Прокат сценических костюмов из кожи</span>
+            <span>
+        <a href="#" class="footer-policy">Политика конфиденциальности</a>
+      </span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
